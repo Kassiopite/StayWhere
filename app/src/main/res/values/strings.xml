@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">StayWhere</string>
+    <string name="amenities">Amenities within 500m</string>
+
+    <string name="search_hint">Enter postal code</string>
+    <string name="add_bookmark_hint">Your added bookmark will display here</string>
+    <string name="invalid_postal_code">Invalid postal code</string>
+    <string name="invalid_response">Invalid response, please try again later.</string>
+    <string name="empty_response">No data available</string>
+    <string name="nearby_hint">Nearby Amenities</string>
+    <string name="mrt">MRT Station</string>
+    <string name="bus_stop">Bus Stop</string>
+    <string name="maxi_seclection">You can only compare two bookmarks.</string>
+    <string name="compare_hint">Long press two bookmarks for comparison</string>
+    <string name="power_by">Powered By</string>
+    <string name="screenshot_hint">Take a sreenshot and share your post</string>
+
+    <string-array name="room_types_array">
+        <item>2 room</item>
+        <item>3 room</item>
+        <item>4 room</item>
+        <item>5 room</item>
+        <item>Executive</item>
+    </string-array>
+    <string name="title_activity_price">PriceActivity</string>
+
+
+</resources>

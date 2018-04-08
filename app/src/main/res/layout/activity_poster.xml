@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@android:color/white"
+    android:padding="18dp"
+    tools:context="com.echo.staywhere.PosterActivity">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/for_sale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="25dp"
+            android:layout_marginTop="25dp"
+            android:src="@mipmap/for_sale" />
+
+        <TextView
+            android:id="@+id/addr_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/for_sale"
+            android:layout_centerHorizontal="true"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/addr_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/addr_1"
+            android:layout_centerHorizontal="true"
+            android:textSize="17sp" />
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@id/for_sale"
+            android:layout_below="@id/addr_2"
+            android:src="@mipmap/logo_mini" />
+
+        <TextView
+            android:id="@+id/power_by"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/addr_2"
+            android:layout_margin="10dp"
+            android:layout_toStartOf="@id/logo"
+            android:text="@string/power_by"
+            android:textSize="18sp" />
+
+
+    </RelativeLayout>
+</LinearLayout>
+
