@@ -98,16 +98,8 @@ public class MainActivity extends AppCompatActivity implements HttpRequest.Async
                     String formattedBookmark = bookmarkList.get(position);
                     String[] datas = formattedBookmark.split("@");
                     String selectedPostalCode = datas[1].trim();
-                    String type = datas[0].trim();
-                    int selectedType = -1;
-                    String[] roomTypes = getResources().getStringArray(R.array.room_types_array);
-                    for (int j = 0; j < roomTypes.length; j++) {
-                        if (type.equals(roomTypes[j])) {
-                            selectedType = j;
-                            break;
-                        }
-                    }
-                    selectedList.remove(selectedPostalCode + "|" + selectedType);
+                    String type = datas[0].trim().toUpperCase();
+                    selectedList.remove(selectedPostalCode + "|" + type);
                 } else {
                     int checkCount = selectedList.size();
                     if (checkCount < 2) {

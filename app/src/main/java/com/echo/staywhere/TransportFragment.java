@@ -98,7 +98,7 @@ public class TransportFragment extends Fragment implements HttpRequest.AsyncResp
                         transports.add(new Amenity("bus_station", name));
                     }
                 }
-            } else
+            } else if (!status.equals("ZERO_RESULTS"))
                 Toast.makeText(context, R.string.invalid_response, Toast.LENGTH_SHORT).show();
         } catch (JSONException e) {
             e.printStackTrace();

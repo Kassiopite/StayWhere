@@ -89,7 +89,7 @@ public class MallFragment extends Fragment implements HttpRequest.AsyncResponse 
                     String name = result.getString("name");
                     malls.add(name);
                 }
-            } else
+            } else if (!status.equals("ZERO_RESULTS"))
                 Toast.makeText(context, R.string.invalid_response, Toast.LENGTH_SHORT).show();
         } catch (JSONException e) {
             e.printStackTrace();

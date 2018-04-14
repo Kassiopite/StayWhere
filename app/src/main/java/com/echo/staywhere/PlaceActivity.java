@@ -130,6 +130,8 @@ public class PlaceActivity extends AppCompatActivity implements OnMapReadyCallba
                     String updateBookmarks = bookmarks;
                     if (bookmarks.startsWith("|"))
                         updateBookmarks = bookmarks.replaceFirst("\\|", "");
+                    if (bookmarks.endsWith("|"))
+                        updateBookmarks = bookmarks.substring(0, bookmarks.length() - 1);
 
                     sp.edit().putInt(Constant.SP_COUNTER, --counter).apply();
                     sp.edit().putString(Constant.SP_BOOKMARK, updateBookmarks).apply();

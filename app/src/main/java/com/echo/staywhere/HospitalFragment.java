@@ -88,7 +88,7 @@ public class HospitalFragment extends Fragment implements HttpRequest.AsyncRespo
                     String name = result.getString("name");
                     hospitals.add(name);
                 }
-            } else
+            } else if (!status.equals("ZERO_RESULTS"))
                 Toast.makeText(context, R.string.invalid_response, Toast.LENGTH_SHORT).show();
         } catch (JSONException e) {
             e.printStackTrace();

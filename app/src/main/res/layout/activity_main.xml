@@ -90,7 +90,6 @@
                 android:layout_height="wrap_content"
                 android:layout_toStartOf="@id/btn_compare"
                 android:text="@string/compare_hint"
-                android:textSize="18sp"
                 android:visibility="gone" />
 
         </RelativeLayout>
